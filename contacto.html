@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CONTACTO</title>
+    <link rel="shortcut icon" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <h1 class="block">AnimeNS</h1>
+        <!-- Menu de navegacion -->
+        <nav >
+  <!-- unordered list:lista no ordenada -->
+              <ul class="menu">
+                  <!-- Lista de items -->
+                  <li>
+                      <a href="./index.html">INICIO</a>
+                  </li>
+                  <li> <a href="./anime.html">ANIME:</a>
+                      <!-- ordererdlist : lista ordenada -->
+                      <ol>
+                          <li>NOTICAS</li>
+                          <li>RESEÑAS</li>
+                          <li>TRAILERS</li>
+                      </ol>
+                  </li>
+                  <li> <a href="./manga.html">MANGA</a></li>
+                  <li> <a href="./figuras.html">FIGURAS</a></li>
+                  <li>
+                      <!-- a=Anchor : ancla hiperviculo de referecia -->
+                      <a href="./contacto.html">CONTACTO</a>
+                  </li>
+              </ul>
+        </nav>
+    </header>
+    <main class="Contacto">
+        <!-- Get: informacion no sensible | post: informacion sensible -->
+        <form action="#" method="get">
+            <p>Nombre y apellido</p>
+            <input type="text" placeholder="Nombre completo" name="nombre-completo">
+            
+                <p>Mail</p>
+            <input type="email" placeholder="juanperez@gmail.com">
+
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="contrasena" id="contrasena">
+            <br>
+            <textarea cols="50" rows="10"></textarea>
+            <br><br>
+            <label>
+                <input type="checkbox">
+                <span>Suscribirme al newsletter</span>
+            </label>
+
+            <br><br>
+            <label>
+            
+                 <span> Hombre</span>
+                <input type="radio" name="sexo" value="hombre">
+
+                <span>Mujer</span>
+                <input type="radio" name="sexo" value="mujer">
+
+                <span>Otro</span>
+                <input type="radio" name="sexo" value="Otro">
+            </label>
+            <br><br>
+            <select name="pais">
+                <option value="seleccion">Seleccione su pais</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Mexico">Mexico</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Comentar">
+            <input type="reset" value="Borrar todo">
+        </form>
+    </main>
+    <footer class="footer">
+        <ul>
+            <!-- 3,4,5* pongo mas  -->
+            <!-- con el alt puedo escibir en varios lugares a la ves -->
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ul>
+    </footer>
+</body>
+</html>
