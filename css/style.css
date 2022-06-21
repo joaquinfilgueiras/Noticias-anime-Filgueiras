@@ -27,6 +27,7 @@ h1 {
     color: blueviolet;
 }
 
+
 .container {
         display: grid; 
         grid-template-columns: 1fr 1fr 1.4fr 0.6fr; 
@@ -48,13 +49,11 @@ h1 {
 
     .block{
         background-color: rgb(28, 70, 56);
-        border: solid 1px black;
         display: block;
         height: 10vh;
         font-size: 50px;
         padding: 15px;
-        background-image: linear-gradient(#1c4638, #42b55b);
-    
+        background-image: linear-gradient(#42b55b ,#1c4638);
     }
   .nav { grid-area: nav;
     display: flex;
@@ -72,9 +71,9 @@ h1 {
     
     .menu li{
         list-style: none;
-        border: blue dotted 3px;
         padding: 15px;
-        background-color: rgb(53, 108, 90);
+        border: #282822;
+        background-color: #1c4638;
         margin-bottom: 15px;
     }
     
@@ -82,7 +81,8 @@ h1 {
         color: rgb(0, 0, 0);
         text-transform: uppercase;
         text-decoration: none;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Roboto', sans-serif;
+
     
     
     }
@@ -103,17 +103,23 @@ h1 {
     background-color: #CCB7AE;
     width: 50%;
     height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    
+    }
     }
 
 
     .section h2 {
         font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
     }
     
     .section p {
         max-width: 550px;
         text-align: center;
         margin: 1rem;
+        font-family: 'Roboto', sans-serif;
     }
     
     .section img {
@@ -128,6 +134,7 @@ h1 {
     background-color: #CCB7AE;
     width: 50%;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
     }
 
     /*Segunda sección*/
@@ -135,12 +142,14 @@ h1 {
     .section2 h3 {
         font-size: 1.5rem;
         text-align: center;
+        font-family: 'Roboto', sans-serif;
     }
     
     .section2 div {
         display: flex;
         justify-content: space-evenly;
         margin-top: 1rem;
+        font-family: 'Roboto', sans-serif;
     }
     
     .section2 img {
@@ -150,6 +159,7 @@ h1 {
     .section2 p {
         max-width: 350px;
         text-align: center;
+        font-family: 'Roboto', sans-serif;
     }
   
     .footer{
@@ -160,6 +170,7 @@ h1 {
         height: 10vh;
         display: flex;
         align-items: flex-end;
+        font-family: 'Roboto', sans-serif;
     }
   
   .asaid { grid-area: asaid;
@@ -177,7 +188,10 @@ h1 {
 
 .main{
     background-color:#CCB7AE;
-}
+    font-family: 'Roboto', sans-serif;
+    
+    }
+
 
 
 
