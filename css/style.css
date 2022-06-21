@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1,.menu {
     color: rgb(255, 255, 255);
         animation-duration: 1s;
         animation-name: aparecer;
@@ -107,7 +107,6 @@ h1 {
     font-family: 'Roboto', sans-serif;
     
     }
-    }
 
 
     .section h2 {
@@ -153,7 +152,7 @@ h1 {
     }
     
     .section2 img {
-        max-width: 2px;
+        max-width: 500px;
     }
     
     .section2 p {
@@ -319,7 +318,3 @@ background-color: #4e2d5a;
         display: none;
     }
 }
-
-
-.body
-{font-family:'Roboto',sans-serif;font-size:16px;line-height:25px;padding:0;margin:0;color:#282822;background-color:#f4f4f4;padding-top:104px}
