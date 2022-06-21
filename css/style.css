@@ -67,7 +67,7 @@ h1 {
         align-items: flex-start;
         flex-wrap: wrap;
         height: 25vh;
-        font-family: 'Times New Roman', Times, serif;
+        font-family:sans-serif;
     }
     
     .menu li{
@@ -305,3 +305,7 @@ background-color: #4e2d5a;
         display: none;
     }
 }
+
+
+.body
+{font-family:'Roboto',sans-serif;font-size:16px;line-height:25px;padding:0;margin:0;color:#282822;background-color:#f4f4f4;padding-top:104px}
