@@ -1,0 +1,38 @@
+.nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 20vh;
+    font-family: sans-serif;
+  
+    li {
+      list-style: none;
+      padding: 15px;
+      border: #282822;
+      background-color: #1c4638;
+      margin-bottom: 15px;
+    }
+  
+    a {
+      color: rgb(0, 0, 0);
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+  
+      &:hover {
+        color: darkgreen;
+      }
+    }
+  
+    li:hover {
+      background-color: rgb(61, 77, 61);
+    }
+  }
