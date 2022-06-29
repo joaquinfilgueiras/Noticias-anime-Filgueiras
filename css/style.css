@@ -218,3 +218,12 @@ ul li {
   .menu li:hover {
     background-color: #3d4d3d; }
 
+    .box {
+      Display:flex;
+    flex-direction:row;
+    justify-content:center;
+    background-color: #3d4d3d;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    }
+    
