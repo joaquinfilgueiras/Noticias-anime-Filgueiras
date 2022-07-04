@@ -3,227 +3,569 @@
   margin: 0;
   padding: 0;}
 
-h1, .menu {
-  color: white;
-  animation-duration: 1s;
-  animation-name: aparecer;
-  animation-iteration-count: initial; }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+@media only screen and (min-width: 992px) {
+  
+  h1, .menu {
+    color: white;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
 
-ul li {
-  color: blueviolet; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.4fr 0.6fr;
-  grid-template-areas: "header header header header" "nev nev nev nev" "section section section ." "section2 section2 section2 ." "footer footer footer footer";
-  background-color: #f9f9fa; }
+      
+      .block {
+        background-color: #1c4638;
+        display: block;
+        height: 7vh;
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif;
+        padding: 15px;
+        background-image: linear-gradient(#42b55b, #1c4638); }
 
-.header {
-  grid-area: header;
-  background-color: #1c4638;;
-  color: black;
-  min-height: 9vh;
-  text-align: start; }
+  .header {
+    background-color: #1c4638;;
+    color: black;
+    min-height: 10vh;
+    text-align: start; }
 
-.block {
-  background-color: #1c4638;
-  display: block;
-  height: 10vh;
-  font-size: 50px;
-  font-family: 'Roboto', sans-serif;
-  padding: 15px;
-  background-image: linear-gradient(#42b55b, #1c4638); }
-
-.section {
-  grid-area: section;
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #CCB7AE;
-  width: 50%;
-  height: 100%;
-  font-family: 'Roboto', sans-serif; }
-  .section h2 {
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif; }
-  .section p {
-    max-width: 550px;
-    text-align: center;
-    margin: 1rem;
-    font-family: 'Roboto', sans-serif; }
-  .section img {
-    max-width: 500px; }
-
-.section2 {
-  grid-area: section2;
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #CCB7AE;
-  width: 50%;
-  height: 100%;
-  font-family: 'Roboto', sans-serif; }
-  .section2 h3 {
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: 'Roboto', sans-serif; }
-  .section2 div {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-    font-family: 'Roboto', sans-serif; }
-  .section2 img {
-    max-width: 500px; }
-  .section2 p {
-    max-width: 350px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif; }
-
-/*Segunda sección*/
-.footer {
-  grid-area: footer;
-  background-color: #A7D49B;
-  color: darkslateblue;
-  font-size: 20px;
-  height: 15vh;
-  display: flex;
-  align-items: flex-end;
-  font-family: 'Roboto', sans-serif; }
-
-.asaid {
-  grid-area: asaid;
-  background-color: rgba(42, 11, 18, 0.358);
-  width: 20%;
-  height: 100%; }
-
-/* 2.Slector de tipo clase */
-.tituloTabla {
-  color: #632610;
-  background-color: bisque; }
-
-.main {
-  background-color: #CCB7AE;
-  font-family: 'Roboto', sans-serif; }
-
-
-
-.titulo1 {
-  background-color: #4e2d5a; }
-
-.inline {
-  background-color: #0f382b;
-  border: solid 1px black;
-  display: inline-block; }
-
-.margin {
-  margin: 25px; }
-
-.pading {
-  padding: 30px; }
-
-/* nomenclatura::after
-  1.camelCase => letraGrandeOsscura
-  2.snake_case => letra grande_grande_oscura
-  3.kebab-case => letra-grande-oscura */
-.p1 {
-  border: double 3px black;
-  background-color: #6e7676;
-  padding: 15px;
-  width: 75px; }
-
-.p2 {
-  border: double 3px black;
-  background-color: #597979;
-  padding: 15px;
-  width: 75px; }
-
-.p3 {
-  border: double 3px black;
-  background-color: #7eb0b0;
-  padding: 15px;
-  width: 75px; }
-
-
-.article {
-  background-color: rgba(179, 113, 127, 0.358);
-  width: 50%;
-  height: 100%; }
-
-.Contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 500px; }
-
-@media (max-width: 768px) {
-  .grilla {
-    grid-template-areas: "header header header header" "nev nev nev nev" "section section section ." "section2 section2 section2 ." "footer footer footer footer"; }
   .nav {
-    flex-direction: row; }
-    .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+    .banner{
+      width: 100%;
+      height: 500px;
+      animation: banner 20s infinite linear alternate;
+      animation-duration: 40s;
+      background-size: 100% 100%;
+      position:relative;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap; }
-  .section img {
-    width: 300px; } }
-
-@media (max-width: 375px) {
-  .nav {
-    flex-direction: column; }
-    .nav li {
-      padding: 5px; }
-  .section img {
-    display: none; } }
-
-.nav {
-  grid-area: nav;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  height: 8vh;
-  font-family: sans-serif; }
-
-
-  .menu li {
-    list-style: none;
-    padding: 15px;
-    border: #282822;
-    background-color: #1c4638;
-    margin-bottom: 15px;  }
-
-  .menu a {
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    color: aliceblue; }
-
-    .menu a:hover {
-      color: darkgreen; }
-
-  .menu li:hover {
-    background-color: #3d4d3d; }
-
-    .box {
-      Display:flex;
-    flex-direction:row;
-    justify-content:center;
-    background-color: #3d4d3d;
-    font-family: 'Roboto', sans-serif;
-    padding: 32px;
+      align-items: center;
     }
+
+    @keyframes banner{
+      0%, 20%{
+        background-image:url(../img/solo-leveling-3-1080x609.jpg) ;
+      }
+  25%,45%{
+    background-image: url(../img/mushoku-tensei-1080x609.jpg);
+  }
+  50%, 70%{
+    background-image: url("../img/konosuba-megumin-1080x609.jpg");
+  }
+  75%, 100%{
+    background-image: url("../img/Trigun-Stampede-Crunchyroll-estrenara-el-nuevo-anime-en-el-2023.jpg");
+  }
+    }
+
+  .container {
+      
+      margin-right: auto;
+      margin-left: auto;
+      background-color: rgb(242, 253, 238);
+  }
+
+    .row {
+      display: flex;
+      width: 100%;
+    }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    font-family: sans-serif; }
+
+    .menu li {
+      list-style: none;
+      padding: 15px;
+      border: #282822;
+      background-color: #1c4638;
+      margin-bottom: 15px;  }
+
+    .menu a {
+      color: black;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      color: aliceblue; }
+
+      .menu a:hover {
+      
+        color: rgb(128, 136, 128); }
+
+      .menu li:hover {
+        border-radius: 2px;
+      background-color: rgb(48, 53, 46); 
+      height: 2vh;
+    }
+
+
+  #news article{
+    border-radius: 9px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin: 20px; 
+      text-align: center;
+      transition: all 0.25s;
+      background-color:   rgb(222, 233, 218);
+  }
+
+
+
+  #news .subtit{
+        padding: 15px;
+        color: rgb(0, 0, 0);
+      background-color: #97f5b68b;
+      }
+
+
+  #news .row .col{
+      width: 65%;
+  }
+
+  #news .row .col{
+      width: 35%;
+  }
+
+  #news article {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        height: 100%;
+        margin: 10px;
+      
+  }
+
+  #news .row .col article {
+    height: 100%;
+  }
+
+  #news .row .col article {
+    height: 50%;
+  }
+
+
+  #news h2 {
+    color: black;
+    font-family:  'Roboto', sans-serif;
+    font-size: 24px;
+    flex-grow: 1;
+  }
+
+  #news p{
+    color: black;
+    font-family:  'Roboto', sans-serif;
+    font-size: 12px;
+    flex-grow: 1;
+  }
+  #news li{
+    color: black;
+    font-family:  'Roboto', sans-serif;
+    font-size: 15px;
+    flex-grow: 1;
+  }
+
+  #news .sin{
+    margin-top: 12px;
+    color: black;
+    font-family:  'Roboto', sans-serif;
+    font-size: 15px;
+    flex-grow: 1;
+  }
+
+  #news figure {
+    margin: 0;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  #news figure img {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(86, 77, 77);
+
+  }
+
+  #news figure figcaption {
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-family:  'Roboto', sans-serif;
+    background: rgba(8, 139, 32, 0.6);
+
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+  }
+
+  #news figure:hover figcaption {
+    background: rgb(26, 34, 28);
+  }
+
+  #news figure figcaption span {
+    color: white;
+  }
+
+  #news img {
+    border-radius: 2px;
+  }
+
+
+  .art{background-color: rgb(242, 253, 238);
+  padding: 3px;}
+
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    min-width: 1px;
+    width: 100%;
+    background: rgb(48, 53, 46);
+    height: 100px;
     
+  }
+
+  .footer{
+    display: flex;
+      width: 100%;
+      height: 65px;
+      justify-content: center;
+      align-items: center;
+  
+  }
+
+  footer .footer i {
+    color: rgb(255, 255, 255);
+    margin-right: 30px;
+    font-size: 22px;
+    padding-top: 20px;
+  }
+
+  footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    font-family:  'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(136, 134, 134);
+  }
+
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: black;
+    font-family:  'Roboto', sans-serif;
+    font-size: 15px;
+  }
+}
+
+  @media (max-width: 768px) {
+    .container {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 0.6fr 1.9fr 0.5fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "header header header"
+        "section section section"
+        "footer footer footer"; 
+    }
+    .nav {
+
+      flex-direction: column; }
+      .nav li {
+        padding: 5px; }
+    .section img {
+      display: none; } 
+
+      h1, .menu {
+        color: white;
+        animation-duration: 1s;
+        animation-name: aparecer;
+        animation-iteration-count: initial; }
+    
+      @keyframes aparecer {
+        0% {
+          opacity: 0; }
+        100% {
+          opacity: 1; } }
+    
+          
+          .block {
+            background-color: #1c4638;
+            display: block;
+            height: 7vh;
+            font-size: 50px;
+            font-family: 'Roboto', sans-serif;
+            padding: 15px;
+            background-image: linear-gradient(#42b55b, #1c4638); }
+    
+      .header {
+        background-color: #1c4638;;
+        color: black;
+        min-height: 10vh;
+        text-align: start; }
+    
+      .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+    
+        .banner{
+          width: 100%;
+          height: 500px;
+          animation: banner 20s infinite linear alternate;
+          animation-duration: 40s;
+          background-size: 100% 100%;
+          position:relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        @keyframes banner{
+          0%, 20%{
+            background-image:url(../img/solo-leveling-3-1080x609.jpg) ;
+          }
+      25%,45%{
+        background-image: url(../img/mushoku-tensei-1080x609.jpg);
+      }
+      50%, 70%{
+        background-image: url("../img/konosuba-megumin-1080x609.jpg");
+      }
+      75%, 100%{
+        background-image: url("../img/Trigun-Stampede-Crunchyroll-estrenara-el-nuevo-anime-en-el-2023.jpg");
+      }
+        }
+    
+
+
+
+
+
+
+
+
+      .container {
+          width: auto;
+          margin-right: auto;
+          margin-left: auto;
+          background-color: rgb(242, 253, 238);
+      }
+    
+        .row {
+          display: flex;
+          width: 100%;
+        }
+    
+      .menu {
+        display: flex;
+        flex-direction: row;
+        height: 8vh;
+        font-family: sans-serif; }
+    
+        .menu li {
+          list-style: none;
+          padding: 15px;
+          border: #282822;
+          background-color: #1c4638;
+          margin-bottom: 15px;  }
+    
+        .menu a {
+          color: black;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-family: 'Roboto', sans-serif;
+          color: aliceblue; }
+    
+          .menu a:hover {
+          
+            color: rgb(128, 136, 128); }
+    
+          .menu li:hover {
+            border-radius: 2px;
+          background-color: rgb(48, 53, 46); 
+          height: 2vh;
+        }
+    
+    
+      #news article{
+        border-radius: 9px;
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          margin: 20px; 
+          text-align: center;
+          transition: all 0.25s;
+          background-color:   rgb(222, 233, 218);
+      }
+    
+    
+    
+      #news .subtit{
+            padding: 15px;
+            color: rgb(0, 0, 0);
+          background-color: #97f5b68b;
+          }
+    
+    
+      #news .row .col{
+          width: 65%;
+      }
+    
+      #news .row .col{
+          width: 35%;
+      }
+    
+      #news article {
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+            height: 100%;
+            margin: 10px;
+          
+      }
+    
+      #news .row .col article {
+        height: 100%;
+      }
+    
+      #news .row .col article {
+        height: 50%;
+      }
+    
+    
+      #news h2 {
+        color: black;
+        font-family:  'Roboto', sans-serif;
+        font-size: 24px;
+        flex-grow: 1;
+      }
+    
+      #news p{
+        color: black;
+        font-family:  'Roboto', sans-serif;
+        font-size: 12px;
+        flex-grow: 1;
+      }
+      #news li{
+        color: black;
+        font-family:  'Roboto', sans-serif;
+        font-size: 15px;
+        flex-grow: 1;
+      }
+    
+      #news .sin{
+        margin-top: 12px;
+        color: black;
+        font-family:  'Roboto', sans-serif;
+        font-size: 15px;
+        flex-grow: 1;
+      }
+    
+      #news figure {
+        margin: 0;
+        margin-bottom: 25px;
+        position: relative;
+      }
+    
+      #news figure img {
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgb(86, 77, 77);
+    
+      }
+    
+      #news figure figcaption {
+        width: auto;
+        padding: 15px;
+        border-radius: 5px;
+        font-family:  'Roboto', sans-serif;
+        background: rgba(8, 139, 32, 0.6);
+    
+        position: absolute;
+        bottom: 25px;
+        left: 15px;
+      }
+    
+      #news figure:hover figcaption {
+        background: rgb(26, 34, 28);
+      }
+    
+      #news figure figcaption span {
+        color: white;
+      }
+    
+      #news img {
+        border-radius: 2px;
+      }
+    
+    
+      .art{background-color: rgb(242, 253, 238);
+      padding: 3px;}
+    
+    
+      footer {
+        display: flex;
+        flex-direction: column;
+        min-width:auto;
+        width: 100%;
+        background: rgb(48, 53, 46);
+        height: 100px;
+      }
+    
+      .footer{
+        display: flex;
+        height: 65px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      footer .footer i {
+        color: rgb(255, 255, 255);
+        margin-right: 30px;
+        font-size: 22px;
+        padding-top: 20px;
+      }
+    
+      footer .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        font-family:  'Roboto', sans-serif;
+        font-size: 14px;
+        color: rgb(136, 134, 134);
+      }
+    
+    
+      .contacto {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        color: black;
+        font-family:  'Roboto', sans-serif;
+        font-size: 15px;
+        
+      }
+    }
