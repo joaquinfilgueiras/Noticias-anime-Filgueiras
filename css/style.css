@@ -62,14 +62,14 @@
 }
 
 .slider {
-
+  display: flex;
   height: 500px;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+ 
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
@@ -948,7 +948,13 @@ background-position: center;
 
 
     
-@media only screen and (min-width: 320px) {
+@media (max-width: 425px) {
+
+  * {
+    margin: auto;
+    padding: 0;
+ }
+
   h1, .menu{
     color: white;
     animation-duration: 1s;
@@ -975,13 +981,20 @@ background-position: center;
     background-color: #1c4638;;
     color: black;
     min-height: 10vh;
-    text-align: start; }
+    text-align: start;
+    width: fit-content; }
 
   .nav {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    min-height: 3vh;
+    padding-top:7vh;
 
+  }
+  body {
+  width: fit-content; 
+}
 
 @keyframes sliding {
   30% {
@@ -1024,7 +1037,7 @@ background-position: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-          
+          display: none;
 }
 .slider__nav {
   width: 12px;
@@ -1073,6 +1086,7 @@ background-position: center;
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+        
       
           
 }
@@ -1180,6 +1194,7 @@ background-position: center;
       background-position: top;
       }
 
+
   .container {
       
       margin-right: auto;
@@ -1188,13 +1203,17 @@ background-position: center;
   }
 
     .row {
-      display: flex;
-      width: 100%;
-    }
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .block img{
   display: flex;
-  flex-direction: center;
+  
   height: 15vh;
   border-radius: 20px;
  
@@ -1218,7 +1237,9 @@ background-position: center;
       text-transform: uppercase;
       text-decoration: none;
       font-family: 'Roboto', sans-serif;
-      color: aliceblue; }
+      color: aliceblue; 
+      
+    }
 
       .menu a:hover {
       
@@ -1239,6 +1260,7 @@ background-position: center;
       text-align: center;
       transition: all 0.25s;
       background-color:   rgb(222, 233, 218);
+      
   }
 
 
@@ -1251,11 +1273,7 @@ background-position: center;
 
 
   #news .row .col{
-      width: 65%;
-  }
-
-  #news .row .col{
-      width: 35%;
+      width: 100%;
   }
 
   #news article {
@@ -1272,7 +1290,7 @@ background-position: center;
   }
 
   #news .row .col article {
-    height: 50%;
+    height: 10%;
   }
 
  
@@ -1280,7 +1298,7 @@ background-position: center;
   #news h2 {
     color: black;
     font-family:  'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     flex-grow: 1;
   }
 
@@ -1343,7 +1361,8 @@ background-position: center;
   }
 
 
-  .art{background-color: rgb(242, 253, 238);
+  .art{
+    background-color: rgb(242, 253, 238);
   padding: 3px;}
 
 
