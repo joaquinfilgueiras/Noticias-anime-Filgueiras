@@ -6,7 +6,7 @@
 
 @media only screen and (min-width: 992px) {
   
-  h1, .menu {
+  h1, .menu{
     color: white;
     animation-duration: 1s;
     animation-name: aparecer;
@@ -39,32 +39,203 @@
     flex-direction: column;
     align-items: center; }
 
-    .banner{
-      width: 100%;
-      height: 500px;
-      animation: banner 20s infinite linear alternate;
-      animation-duration: 40s;
-      background-size: 100% 100%;
-      position:relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slider {
+
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          
+}
+.slider__nav {
+  width: 12px;
+  height: 12px;
+  margin: 2rem 12px;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 6px solid #ccc;
+  outline-offset: -6px;
+  box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.slider__nav:checked {
+  -webkit-animation: check 0.4s linear forwards;
+          animation: check 0.4s linear forwards;
+}
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+  left: 0%;
+}
+.slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+  left: -100%;
+}
+.slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+  left: -200%;
+}
+.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+  left: -300%;
+}
+.slider__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      
+          
+}
+.slider__contents {
+  height: 100%;
+  padding: 2rem;
+  text-align: end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          animation: sliding 60s infinite;
+        
+}
+
+.slider__caption {
+  font-weight: 500px;
+  margin: 15rem 0 1rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.483);
+  color: rgb(223, 223, 223);
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0c4316a2;;
+  border-radius: 3px;
+}
+.slider__txt {
+  color: rgb(255, 255, 255);
+  margin-bottom: rem;
+  max-width: 300px;
+  font-size: 30px;
+  border-radius: 3px;
+        font-family: 'Roboto', sans-serif;
+        background-color: #00000051;;
+        text-align:left;font-weight:normal;vertical-align:middle;
+      
+        
+  
+}
+
+@-webkit-keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+@keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+.item-1 {
+background:url("../img/chainsaw-man-4-1-1080x609.jpg.webp");
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+.item-2 {
+  background:url("../img/FXW4i_JaMAAL-XK.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  .item-3{
+    background:url("../img/DBSSH-KV.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
     }
 
-    @keyframes banner{
-      0%, 20%{
-        background-image:url(../img/solo-leveling-3-1080x609.jpg) ;
+    .item-4{
+      background:url("../img/isekaishikkaku7.jpg");
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: top;
       }
-  25%,45%{
-    background-image: url(../img/mushoku-tensei-1080x609.jpg);
-  }
-  50%, 70%{
-    background-image: url("../img/konosuba-megumin-1080x609.jpg");
-  }
-  75%, 100%{
-    background-image: url("../img/Trigun-Stampede-Crunchyroll-estrenara-el-nuevo-anime-en-el-2023.jpg");
-  }
-    }
 
   .container {
       
@@ -77,6 +248,14 @@
       display: flex;
       width: 100%;
     }
+
+.block img{
+  display: flex;
+  flex-position: center;
+  height: 15vh;
+  border-radius: 20px;
+ 
+}
 
   .menu {
     display: flex;
@@ -153,6 +332,7 @@
     height: 50%;
   }
 
+ 
 
   #news h2 {
     color: black;
@@ -271,7 +451,13 @@
     color: black;
     font-family:  'Roboto', sans-serif;
     font-size: 15px;
+  
   }
+  .container .contacto {
+    height: 70vh;
+
+  }
+
 }
 
   @media (max-width: 768px) {
